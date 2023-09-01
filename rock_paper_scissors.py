@@ -31,9 +31,23 @@ scissors = '''
 
 # Rock beats scissors, scissors beat paper, and paper beats rock.
 
-your_choice = int(input("Enter 0 for rock, 1 for paper and 2 for scissors. "))
+your_choice = int(input("Enter 0 for rock, 1 for paper and 2 for scissors. \n"))
+if your_choice ==0:
+    print(rock)
+elif your_choice == 1:
+    print(paper)
+else:
+    print(scissors)
+
 computer_choice = random.randint(0,2)
 print(computer_choice)
+
+if computer_choice ==0:
+    print(rock)
+elif computer_choice == 1:
+    print(paper)
+else:
+    print(scissors)
 
 if your_choice == computer_choice:
     print("It's Draw!")
